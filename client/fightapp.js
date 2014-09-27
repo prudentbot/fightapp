@@ -1,5 +1,9 @@
 Router.map(function(){
-  this.route('home', {path: '/'});
+  this.route('home', {path: '/home'});
+  this.route('search', {path: '/search'});
+  this.route('map', {path: '/map'});
+  this.route('history', {path: '/history'});
+  this.route('account', {path: '/account'});
 });
 
 Template.home.loggedIn = function() {
