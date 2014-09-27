@@ -1,7 +1,10 @@
 Router.map(function(){
-  this.route('home', {page: '/'});
-
+  this.route('home', {path: '/'});
 });
+
+Template.home.loggedIn = function() {
+	return !!Meteor.user();
+}
 
 Template.picker.fighter = function() {
 	var fighter = Meteor.users.findOne({});
