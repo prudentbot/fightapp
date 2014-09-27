@@ -24,5 +24,16 @@ Template.picker.events({
 
   	console.log(fighter);
   	//Meteor.users.update(userId, {$push: {prospects: fighter}});
+  },
+  'click #no': function () {
+  	var userId = Meteor.userId();
+  	var fighter = Session.get("fighter");
+
+  	if(!userId || !fighter){
+  		console.log("this shouldn't happen!")
+  		return;
+  	}
+
+  	//Meteor.users.update(userId, {$push: {blocked: fighter}})
   }
 });
