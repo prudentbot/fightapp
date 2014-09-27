@@ -1,18 +1,24 @@
 <head>
   <title>Fighter</title>
 </head>
+
 <body>
-	{{>navigation}}
-	<div class="container">
-		<div class="row">
-				<div class="span10">
-				{{renderPage}}
-				</div>
-		</div>
-	</div>
-	{{> loginButtons}}
-	{{> picker}}
+	{{renderPage}}
 </body>
+
+<template name="home">
+	{{#if loggedIn}}
+		{{>navigation}}
+		<p> placeholder home </p>
+	{{else}}
+		{{> login}}
+	{{/if}}
+</template>
+
+<template name="login">
+	<h1> login </h1>
+	{{> loginButtons}}
+</template>
 
 <template name="picker">
 	<h1> picker </h1>
