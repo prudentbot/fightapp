@@ -1,29 +1,11 @@
 <head>
   <title>Fighter</title>
+      <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js">
+    </script>
+
 </head>
 
 <body>
 	{{renderPage}}
 </body>
-
-<template name="home">
-	{{#if loggedIn}}
-		{{>navigation}}
-		<p> placeholder home </p>
-	{{else}}
-		{{> login}}
-	{{/if}}
-</template>
-
-<template name="login">
-	<h1> login </h1>
-	{{> loginButtons}}
-</template>
-
-<template name="picker">
-	<h1> picker </h1>
-	{{fighter}}
-	<input id="request" type="button" value="Request Fight!"/>
-	<input id="no" type="button" value="no"/>
-</template>
-
