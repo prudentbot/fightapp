@@ -6,3 +6,7 @@
 meteor-platform
 autopublish
 insecure
+bootstrap
+jquery
+iron:router
+
