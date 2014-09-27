@@ -9,4 +9,6 @@ insecure
 bootstrap
 jquery
 iron:router
+accounts-facebook
+accounts-ui
 
