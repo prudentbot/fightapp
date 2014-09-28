@@ -1,11 +1,27 @@
 <template name="account">
+	{{>navigation}}
+	<h4 class="middlews">Michael Betts</h4>
 	<div class="well">
+	<img src="img/mike.jpg" height="225" width="225" class="img-responsive" alt="" >
+	<div class="bio">
+	<textarea class="form-control" rows="3" id="textArea"></textarea>
+	</div>
+	</div>
+	<div class="well">
+		<label for="weight">Name:</label>
+		<input placeholder="ex: 200 lbs" class="input-small weight" type="text" name="weight" value="Michael Betts" id="name">
 		<label for="weight">Weight:</label>
-		<input placeholder="ex: 200 lbs" class="input-small weight" type="text" name="weight" value="" id="weight">
+		<input placeholder="ex: 200 lbs" class="input-small weight" type="text" name="weight" value="160 lbs" id="weight">
 		<label for="ethnicity">Ethnicity:</label>
-		<input placeholder="ex: Black" class="input-small weight" type="text" name="ethnicity" value="" id="ethnicity">
+		<input placeholder="ex: Black" class="input-small weight" type="text" name="ethnicity" value="White" id="ethnicity">
+	</div>
+
+	<strong class="choice">Objective Fighter Rating</strong>
+	<div>
+		{{>rating}}
 	</div>
 	<div>
-<!-- PUT IN FACEBOOK PHOTO maybe take a new photo with camera pack -->
+		{{>search}}
 	</div>
+	
 </template>
